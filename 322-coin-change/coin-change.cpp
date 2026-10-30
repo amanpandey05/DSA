@@ -8,6 +8,7 @@ int solve(vector<int>& arr, int amt) {
    dp[0] = 0;
 //    if(dp[amt] != -1) return dp[amt];
    for(int i = 1; i<=amt; i++) {
+    // har amount pe jaake check karo ki kya scene hai.
     for(int j = 0; j<n; j++) {
         if(i-arr[j]>=0 && dp[i-arr[j]] != INT_MAX) {
             
